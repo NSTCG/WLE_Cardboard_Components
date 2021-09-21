@@ -29,7 +29,7 @@ WL.registerComponent('Double_click', {
         
         else if(timer>0) {
 
-            //do  funtion to be  Exicuted on double click
+            //Replace with your function
 
             
             if(this.rotateflag==true){
