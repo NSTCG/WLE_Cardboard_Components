@@ -26,7 +26,7 @@ Cardboard_camera  : Use Vr camera for this parameter (eye left or eye right )
 This enables User to do a funtion on double click 
 The default funtion is set to roate the Object over time but you can change the function in Cardboard_double_click.js where it specifies *replace with your funtion*
 
-[Double_click](https://user-images.githubusercontent.com/68344430/134128243-b43e1062-8dbd-4e0c-8493-828bf24f09a5.JPG)
+![Double_click](https://user-images.githubusercontent.com/68344430/134128243-b43e1062-8dbd-4e0c-8493-828bf24f09a5.JPG)
 
 Components :
 
