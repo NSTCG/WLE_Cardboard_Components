@@ -34,11 +34,11 @@ Time gap    :the time gap between the first click and second click which is requ
 
 # set_boundary.js
 
-Restrict players locomotion outside a rectangular space 
+Restrict players locomotion outside a rectangular space \
 
-left_bound  : left boundary limit in meters 
-right_bound : right boundary limit in meters 
-front_bound : front boundary limit in meters 
-top_bound   : top boundary limit in meters 
-restrictY   : Tick to restrict Y axis of  player in player's height ( boolian :true / false )
-height      : player's height in meters
+left_bound  : left boundary limit in meters \
+right_bound : right boundary limit in meters \
+front_bound : front boundary limit in meters \
+top_bound   : top boundary limit in meters \
+restrictY   : Tick to restrict Y axis of  player in player's height ( boolian :true / false ) \
+height      : player's height in meters \
