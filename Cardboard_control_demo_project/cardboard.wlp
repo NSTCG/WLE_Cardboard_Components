@@ -17,6 +17,13 @@
                 },
                 {
                     "type": "set_boundary"
+                },
+                {
+                    "type": "joystick",
+                    "joystick": {
+                        "headObject": "17",
+                        "lockY": true
+                    }
                 }
             ],
             "translation": [
@@ -120,6 +127,9 @@
                 },
                 {
                     "type": "mouse-look"
+                },
+                {
+                    "type": "touch-look"
                 }
             ]
         },

@@ -17,7 +17,9 @@ import {MouseLookComponent} from '@wonderlandengine/components';
 import {WasdControlsComponent} from '@wonderlandengine/components';
 import {Double_click} from './Cardboard_double_click.js';
 import {Cardboard_control} from './cardboard_control.js';
+import {Joystick} from './joystick.js';
 import {Set_boundary} from './set_boundary.js';
+import {TouchLook} from './touch-look.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -81,7 +83,9 @@ engine.registerComponent(MouseLookComponent);
 engine.registerComponent(WasdControlsComponent);
 engine.registerComponent(Double_click);
 engine.registerComponent(Cardboard_control);
+engine.registerComponent(Joystick);
 engine.registerComponent(Set_boundary);
+engine.registerComponent(TouchLook);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {
