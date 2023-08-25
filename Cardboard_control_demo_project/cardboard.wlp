@@ -19,23 +19,21 @@
                     "type": "set_boundary"
                 }
             ],
-            "transformation": [
-                0.7160133,
-                0.0,
-                0.6980865,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                -0.6980865,
-                0.0,
-                0.7160133,
-                0.0,
+            "translation": [
                 -3.2591099,
                 1.8000135,
-                1.7569212,
-                1.0
+                1.7569211
+            ],
+            "rotation": [
+                0.0,
+                -0.3768199,
+                0.0,
+                0.9262865
+            ],
+            "scaling": [
+                0.9999998,
+                1.0,
+                0.9999998
             ]
         },
         "15": {
@@ -49,23 +47,21 @@
                     }
                 }
             ],
-            "transformation": [
+            "translation": [
+                0.0,
+                0.0,
+                1.1920928955078125e-7
+            ],
+            "rotation": [
+                -0.7072496,
+                0.0,
+                0.0,
+                0.7069638
+            ],
+            "scaling": [
                 4.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                -0.0016164,
-                -3.9999997,
-                0.0,
-                0.0,
-                3.9999997,
-                -0.0016164,
-                0.0,
-                0.0,
-                0.0,
-                1.192092895507813e-7,
-                1.0
+                4.0,
+                4.0
             ]
         },
         "16": {
@@ -98,23 +94,21 @@
                     "type": "cursor-target"
                 }
             ],
-            "transformation": [
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.5,
-                0.0,
+            "translation": [
                 2.9802322387695313e-8,
                 0.4999999,
-                -0.0678998,
+                -0.0678998
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
                 1.0
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.5
             ]
         },
         "17": {
@@ -141,13 +135,6 @@
                     "input": {
                         "type": "eye left"
                     }
-                },
-                {
-                    "type": "cursor",
-                    "cursor": {
-                        "cursorObject": "55",
-                        "handedness": "input component"
-                    }
                 }
             ]
         },
@@ -172,26 +159,24 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "intensity": 3.3329999
                     }
                 }
             ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
+            "translation": [
                 0.0,
                 3.0,
-                2.0,
+                2.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
                 1.0
             ]
         },
@@ -201,26 +186,24 @@
                 {
                     "type": "light",
                     "light": {
-                        "attenuation": 0.1
+                        "intensity": 3.3329999
                     }
                 }
             ],
-            "transformation": [
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                1.0,
-                0.0,
+            "translation": [
                 -1.0,
                 3.0,
-                -1.0,
+                -1.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
                 1.0
             ]
         },
@@ -235,25 +218,23 @@
                     }
                 }
             ],
-            "transformation": [
-                0.1,
+            "parent": null,
+            "translation": [
                 0.0,
                 0.0,
-                0.0,
-                0.0,
-                0.1,
-                0.0,
-                0.0,
-                0.0,
-                0.0,
-                0.1,
-                0.0,
+                0.0
+            ],
+            "rotation": [
                 0.0,
                 0.0,
                 0.0,
                 1.0
             ],
-            "parent": null
+            "scaling": [
+                0.1,
+                0.1,
+                0.1
+            ]
         }
     },
     "meshes": {
@@ -316,6 +297,9 @@
             "link": {
                 "name": "DefaultFontMaterial",
                 "file": "default"
+            },
+            "Text": {
+                "font": "58"
             }
         },
         "20": {
@@ -328,7 +312,25 @@
                     9.999999974752427e-7,
                     1.0
                 ],
-                "shininess": 1
+                "shininess": 1,
+                "emissiveColor": [
+                    0.2,
+                    0.2,
+                    0.2,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1.0
+                ]
             }
         },
         "22": {
@@ -348,9 +350,15 @@
                 ],
                 "shininess": 10,
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.317647,
                     0.0,
-                    0.2165777,
+                    0.2165776,
                     1.0
                 ]
             }
@@ -371,6 +379,12 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.3843137,
                     0.3089579,
                     0.0,
@@ -394,9 +408,15 @@
                     1.0
                 ],
                 "ambientColor": [
+                    0.05,
+                    0.05,
+                    0.05,
+                    1.0
+                ],
+                "emissiveColor": [
                     0.0,
                     0.2352941,
-                    0.1437908,
+                    0.1437907,
                     1.0
                 ]
             }
@@ -528,9 +548,9 @@
         "project": {
             "name": "cardboard",
             "version": [
+                1,
                 0,
-                9,
-                1
+                4
             ]
         },
         "vr": {
@@ -539,9 +559,12 @@
         },
         "scripting": {
             "sourcePaths": [
-                "/js/editor-components-bundle.js",
                 "js/"
-            ]
+            ],
+            "libraryPaths": [
+                "/js/lib/"
+            ],
+            "bundlingType": "esbuild"
         }
     },
     "animations": {},
@@ -563,6 +586,9 @@
             "link": {
                 "name": "Flat Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "36": {
@@ -575,18 +601,29 @@
             "link": {
                 "name": "Phong Opaque",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true,
+                "WITH_EMISSIVE": true
             }
         },
         "38": {
             "link": {
                 "name": "Phong Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true,
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "40": {
             "link": {
                 "name": "Foliage",
                 "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
             }
         },
         "41": {
@@ -611,6 +648,9 @@
             "link": {
                 "name": "Physical Opaque Textured",
                 "file": "default"
+            },
+            "features": {
+                "ALPHA_MASKED": true
             }
         },
         "51": {
@@ -624,6 +664,33 @@
                 "name": "Sky",
                 "file": "default"
             }
+        },
+        "56": {
+            "link": {
+                "name": "Phong Normalmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
+        },
+        "57": {
+            "link": {
+                "name": "Phong Lightmapped",
+                "file": "default"
+            },
+            "features": {
+                "DEPRECATED_LIGHT_ATTENUATION": true
+            }
         }
-    }
+    },
+    "fonts": {
+        "58": {
+            "link": {
+                "name": "DejaVuSans.ttf",
+                "file": "default"
+            }
+        }
+    },
+    "languages": {}
 }

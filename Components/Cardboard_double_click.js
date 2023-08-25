@@ -1,50 +1,48 @@
-starttimer=false;    
-timer=0;
+import {Component, Type} from "@wonderlandengine/api";
 
-WL.registerComponent('Double_click', {
-    Time_gap: {type: WL.Type.Float, default: 1.0},
-},
-{
+export class Double_click extends Component {
+	static TypeName = "Double_click";
+	static Properties = {
+		secondTapDelay: {type: Type.Float, default: 1.0},
+	};
 
-    init: function() {
-        this.rotateflag=false;
-        WL.onXRSessionStart.push(s => s.addEventListener('selectstart',this.press1.bind(this) ));    /** to listen to 'select start' event and exicute the funtion 'press' only after we enter vr session  */
-       
-    },
-    
-    update: function(dt) {
-        if(starttimer=true){
-            timer+=dt;
-        }
-        if(this.rotateflag==true){
-            this.object.rotateAxisAngleDeg([0, 1, 0], dt* 90);
-        }
-       
-    },
-    press1: function(){
+	init() {
+		this.starttimer = false;
+		this.timer = 0;
+		/** to listen to 'select start' event and exicute the funtion 'press' only after we enter vr session  */
+		this.engine.onXRSessionStart.push((s) =>
+			s.addEventListener("selectstart", this.press.bind(this)),
+		);
+	}
 
-        if(timer>this.Time_gap){
-            timer=0;
-        }
-        
-        else if(timer>0) {
+	start() {
+		this.rotateflag = false;
+	}
 
-            //Replace with your function
+	update(dt) {
+		if ((this.starttimer = true)) {
+			this.timer += dt;
+		}
+		this.rotate();
+	}
 
-            
-            if(this.rotateflag==true){
-                this.rotateflag=false;
-            }
-            else if(this.rotateflag==false){
+	press() {
+		starttimer = true;
+		if (this.timer < this.secondTapDelay) {
+			/** Replace with your funtion **/
+			this.setRotateFlag();
+		} else {
+			this.timer = 0;
+		}
+	}
 
-                this.rotateflag=true;
-            }
-            
+	setRotateFlag() {
+		this.rotateflag = !this.rotateflag;
+	}
 
-        }
-        starttimer=true;
-
-        
-    },
-
-});
+	rotate() {
+		if (this.rotateflag == true) {
+			this.object.rotateAxisAngleDeg([0, 1, 0], dt * 90);
+		}
+	}
+}
