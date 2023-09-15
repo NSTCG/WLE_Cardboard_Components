@@ -60,3 +60,5 @@ note: current implementation lacks visualisation
 
 A Component to look around the scene with touch events 
 detects events on right half of the screen 
+
+
