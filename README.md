@@ -58,7 +58,7 @@ note: current implementation lacks visualisation
 
 # touchlook.js
 
-A Component to look around the scene with touch events 
-detects events on right half of the screen 
+A Component to look around the scene with touch events.
+Detects events on right half of the screen 
 
 
