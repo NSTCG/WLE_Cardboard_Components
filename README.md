@@ -47,3 +47,16 @@ front_bound : front boundary limit in meters \
 top_bound   : top boundary limit in meters \
 restrictY   : Tick to restrict Y axis of  player in player's height ( boolian :true / false ) \
 height      : player's height in meters 
+
+# joystick.js
+
+Simple joystick controller for mobile,
+makes locomotion possible with touch events
+detects the events on left half of the screen
+
+note: current implementation lacks visualisation 
+
+# touchlook.js
+
+A Component to look around the scene with touch events 
+detects events on right half of the screen 
